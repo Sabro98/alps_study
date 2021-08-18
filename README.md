@@ -1,6 +1,7 @@
 # alps_study
 
 fork 후 -> 자신의 폴더 생성 -> 풀이 후 PR로 요청
+**웬만하면 다른 사람 폴더 터치X**
 
 미룬 문제: https://www.acmicpc.net/problem/22358
 
