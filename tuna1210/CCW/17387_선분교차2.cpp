@@ -27,14 +27,16 @@ int main()
 
     int aab1 = ccw(a1, a2, b1), aab2 = ccw(a1, a2, b2), bba1 = ccw(b1, b2, a1), bba2 = ccw(b1, b2, a2);
 
-    // 같은 clock wise
+    // 두개 각각 다른 clock wise
     if(aab1 * aab2 <= 0 && bba1 * bba2 <= 0)
     {
         // 둘 다 같은 직선 상에 존재
-        if(aab1 * aab2 == 0 && bba1 * bba2 == 0)
+        if(aab1 == 0 && aab2 == 0)
         {
+            if(a1 > a2) swap(a1, a2);
+            if(b1 > b2) swap(b1, b2);
             // 직선 a1 ~ a2 가 b1 ~ b2 앞에 있거나 뒤에 있으면 교차 X
-            if((a1 < b2 && a2 < b1) || (b1 < a2 && b2 < a1))
+            if(a2 < b1 || b2 < a1)
             {
                 cout << 0 << "\n";
                 return 0;
