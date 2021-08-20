@@ -20,7 +20,7 @@ CCW + 선분교차
 
 - https://www.acmicpc.net/problem/11657
 - https://www.acmicpc.net/problem/1865
-- https://www.acmicpc.net/problem/1219 -> 주의해야됨
-- https://www.acmicpc.net/problem/1738 -> 주의해야됨
+- https://www.acmicpc.net/problem/1219 -> 주의
+- https://www.acmicpc.net/problem/1738 -> 주의
 - https://www.acmicpc.net/problem/3860
 - https://www.acmicpc.net/problem/13907
