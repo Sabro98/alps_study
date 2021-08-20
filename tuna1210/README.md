@@ -7,7 +7,7 @@ Counter Clock Wise, 세 점이 순서대로 시계방향인지 아닌지 검사�
 ![신발끈](https://mblogthumb-phinf.pstatic.net/20160530_226/10baba_14645967148306TPeY_PNG/%BB%E7%BC%B1%BD%C4.png?type=w2)
 
 
-* 예제 : 중간에 더해가는 과정에서 OVFL가 일어날 수 있음을 주의
+* 예제 : **중간에 더해가는 과정에서 OVFL가 일어날 수 있음을 주의**
 ```
 int ccw(pair<int, int> a, pair<int, int> b, pair<int, int> c)
 {
