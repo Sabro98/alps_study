@@ -13,26 +13,41 @@ int ccw(pair<int, int> a, pair<int, int> b, pair<int, int> c) {
     else return -1; // 음수라면 시계 방향
 }
 
-int isCrossed(pair<P, P> A, pair<P, P> B){ //A -> 주어진 선분, B -> 사각형의 한 변
+bool isCrossOver(pair<P, P> A, pair<P, P> B){
+    P a, b, c, d;
+    a = A.first, b = A.second, c = B.first, d = B.second;
+    int first = ccw(a, b, c);
+    int second = ccw(a, b, d);
+    int third= ccw(c, d, a);
+    int fourth = ccw(c, d, b);
+
+    if(first == 0 && second == 0 && third == 0 && fourth == 0){
+        if(a > b) swap(a, b);
+        if(c > d) swap(c, d);
+        if(a > c){
+            swap(a, c);
+            swap(b, d);
+        }
+        if(a < d && c < b) return true;
+        if(a == c) return true;
+        if(b == d) return true;
+    }
+    return false;
+}
+
+int isCrossed(pair<P, P> A, pair<P, P> B){
     P a, b, c, d;
     a = A.first, b = A.second, c = B.first, d = B.second;
     int first = ccw(a, b, c) * ccw(a, b, d);
     int second = ccw(c, d, a) * ccw(c, d, b);
 
-
     if(first == 0 && second == 0){
         if(a > b) swap(a, b);
         if(c > d) swap(c, d);
-        if(a < d && c < b) return 4; // 무한 교차
-        else if(a == d || b == c) return -1; // 모서리에 교차   __/
-        else return 0;
+        return (a <= d && c <= b); // 무한 교차
     }
 
-    if(first == 0 && second < 0) return -1; // 모서리에 교차  /--
-
-    if(first < 0 && second <= 0) return 1; //평범하게 교차
-
-    return 0;
+    return first <= 0 && second <= 0; //평범하게 교차
 }
 
 int main() {
@@ -43,34 +58,68 @@ int main() {
     cin >> T;
     while(T--){
         int xmin, xmax, ymin, ymax;
-        pair<P, P> a, b;
+        pair<P, P> a;
         vector<pair<P, P>> lines;
-        
+
         cin >> xmin >> ymin >> xmax >> ymax;
         cin >> a.first.first >> a.first.second >> a.second.first >> a.second.second;
         lines.push_back({{xmin, ymin}, {xmin, ymax}});
         lines.push_back({{xmin, ymin}, {xmax, ymin}});
         lines.push_back({{xmax, ymax}, {xmin, ymax}});
         lines.push_back({{xmax, ymax}, {xmax, ymin}});
-        
-        int ans = 0;
-        for (auto line : lines){
-            int res = isCrossed(a, line);
-            cout << res << ' ';
-            if(res == -1) {
-                ans = 1;
-                break;
-            }
 
-            if(res == 4) {
-                ans = 4;
-                break;
-            }
-            
-            ans += res;
-            
+        int ans = 0;
+        bool tmp = false;
+        for(auto line : lines){
+            tmp |= isCrossOver(a, line);
         }
-        cout << '\n' << ans << '\n';
+        if(tmp){
+            cout << 4 << '\n';
+            continue;
+        }
+        //두 선분 동시에 교차 먼저 탐색
+
+        bool flag[4] = {false, };
+        if(a.first > a.second) swap(a.first, a.second);
+        if(ccw(a.first, a.second, {xmin, ymin}) == 0){
+            auto c = pair<int, int>(xmin, ymin);
+            if(a.first <= c && c <= a.second){
+                ans++;
+                flag[0] = true;
+                flag[1] = true;
+            }
+        }
+        if(ccw(a.first, a.second, {xmin, ymax}) == 0){
+            auto c = pair<int, int>(xmin, ymax);
+            if(a.first <= c && c <= a.second){
+                ans++;
+                flag[0] = true;
+                flag[2] = true;
+            }
+        }
+        if(ccw(a.first, a.second, {xmax, ymin}) == 0){
+            auto c = pair<int, int>(xmax, ymin);
+            if(a.first <= c && c <= a.second){
+                ans++;
+                flag[1] = true;
+                flag[3] = true;
+            }
+        }
+        if(ccw(a.first, a.second, {xmax, ymax}) == 0){
+            auto c = pair<int, int>(xmax, ymax);
+            if(a.first <= c && c <= a.second){
+                ans++;
+                flag[2] = true;
+                flag[3] = true;
+            }
+        }
+
+        for(int i=0; i<4; i++){
+            auto line = lines[i];
+            if(flag[i]) continue;
+            if(isCrossed(a, line)) ans++;
+        }
+        cout << ans << '\n';
     }
 
     return 0;
