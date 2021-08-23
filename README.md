@@ -1,12 +1,19 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&height=200&text=ALPS%20Algorithm%20Study&color=50bcdf&fontColor=FFFFFF&fontSize=35&fontAlignY=35&descAlign=66&descAlignY=48)  
 
-<p align="center">
-<strong>웬만하면 다른 사람 폴더 터치X</strong>
-</p>
 
-* 미룬 문제: https://www.acmicpc.net/problem/22358
+**웬만하면 다른 사람 폴더 터치X**
+
+미룬 문제: [스키장](https://www.acmicpc.net/problem/22358)
 
 <br>
+
+***
+| 멤버 | Solvedac |
+| ------ | ------ |
+| 최인혁 | [![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=inhyuk05)](https://solved.ac/inhyuk05) |
+| 김연영 | [![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=brixno)](https://solved.ac/brixno) |
+| 이주석 | [![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=1231js)](https://solved.ac/1231js) |
+| 정동원 | [![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=tuna1210)](https://solved.ac/tuna1210) |
 
 ***
 ## Problems
