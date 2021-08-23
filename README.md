@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&height=200&text=ALPS%20Algorithm%20Study&color=50bcdf&animation=scaleIn&fontColor=FFFFFF&fontSize=35&fontAlignY=35&descAlign=66&descAlignY=48)  
+![header](https://capsule-render.vercel.app/api?type=waving&height=200&text=ALPS%20Algorithm%20Study&color=50bcdf&fontColor=FFFFFF&fontSize=35&fontAlignY=35&descAlign=66&descAlignY=48)  
 
 <p align="center">
 <strong>웬만하면 다른 사람 폴더 터치X</strong>
