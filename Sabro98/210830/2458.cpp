@@ -43,10 +43,9 @@ int main()
         bool flag = true;
         for (int j = 1; j <= N; j++)
         {
-            flag &= (A[i][j] || A[j][i]);
+            flag &= (A[i][j] | A[j][i]);
         }
-        if (flag)
-            ans++;
+        ans += flag;
     }
 
     cout << ans;
