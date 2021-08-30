@@ -1,4 +1,15 @@
-# 알고리즘 정리 by tuna1210
+![header](https://capsule-render.vercel.app/api?type=waving&height=200&text=ALPS%20Algorithm%20Study&color=50bcdf&fontColor=FFFFFF&fontSize=35&fontAlignY=30&desc=tuna1210&descAlign=66&descAlignY=48)  
+
+
+<p align="center">
+<a href=https://solved.ac/tuna1210>
+<img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=tuna1210" alt="text" width="number"/>
+</a>
+</p>
+
+***  
+
+# 알고리즘 정리
 
 ## CCW
 Counter Clock Wise, 세 점이 순서대로 시계방향인지 아닌지 검사하는 방법.  
