@@ -37,12 +37,47 @@ int ccw(pair<int, int> a, pair<int, int> b, pair<int, int> c)
 
 ***
 ## Dijkstra
-* [세금](https://www.acmicpc.net/problem/13907) : 
+**[13907 세금](https://www.acmicpc.net/problem/13907)**   
 $dist$ 배열을 \[노드]\[거쳐온 노드 수]로 2차원으로 선언, 문제의 input이 $N ≤ 1000$ 이므로 거친 노드의 최대값은 1000이다. 따라서 다익스트라를 실행할때 거친노드가 1000을 넘어간다면 무시하도록 예외 처리를 해주어야 한다. 
 ```
 if(nextMove == 1000) continue;
 ```
-또 다른 풀이 : 더 높은 비용을 가지고 더 많은 노드를 거쳐온 경로는 최적해가 되지 않으므로 큐에 집어 넣지 않아도 됨
+또 다른 풀이 : 더 높은 비용을 가지고 더 많은 노드를 거쳐온 경로는 최적해가 되지 않음이 보장되므로 큐에 집어 넣지 않아도 된다. 1 - 2 - 1 - 2 - 1 - ... 같은 경우. (최소비용을 저장하는 minDist 배열과 그 최소비용의 경로 길이를 저장하는 path 배열을 추가로 만듬)
+```
+if(minDist[nextInd] > curCost + nextCost)
+{
+    minDist[nextInd] = curCost + nextCost;
+    path[nextInd] = nextMove;
+    dist[nextInd][nextMove] = curCost + nextCost;
+    pq.push({dist[nextInd][nextMove], {nextInd, nextMove}});
+}
+else if(dist[nextInd][nextMove] > curCost + nextCost && path[nextInd] > nextMove)
+{
+    dist[nextInd][nextMove] = curCost + nextCost;
+    pq.push({dist[nextInd][nextMove], {nextInd, nextMove}});
+}
+```
+세금 인상 계산 부분은 minDist와 path 배열을 이용하여 최적화가 가능해진다.
+```
+for (const auto& curTax : tax)
+{
+    min = INF;
+    for (int i = 0; i <= minMove; i++)
+    {
+        if(dist[d][i] == INF) continue;
+        tmp = curTax * i;
+        if(min > dist[d][i] + tmp)
+        {
+            min = dist[d][i] + tmp;
+            maxCnt = i;
+        }
+        dist[d][i] += tmp;
+    }
+    minMove = maxCnt;
+    cout << min << "\n";
+}
+```
+
 
 ***
 ## 소수판정
