@@ -26,7 +26,7 @@
     <div markdown="1">
         <ul>
             <li><a href=https://www.acmicpc.net/problem/2610>회의준비</a></li>
-            <li><a href=https://www.acmicpc.net/problem/1486>등산</a></li>
+            <li><a href=https://www.acmicpc.net/problem/1486>등산</a></li>
             <li><a href=https://www.acmicpc.net/problem/1507>궁금한 민호</a></li>
             <li><a href=https://www.acmicpc.net/problem/17182>우주 탐사선</a></li>
             <li><a href=https://www.acmicpc.net/problem/1602>도망자 원숭이</a></li>
