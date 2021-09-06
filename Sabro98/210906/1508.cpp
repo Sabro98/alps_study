@@ -9,7 +9,7 @@ using namespace std;
 
 typedef pair<int, int> P;
 
-int N, dist[21][21], floyd[21][21];
+int N, dist[21][21];
 bool edge[21][21];
 
 int main()
@@ -23,9 +23,10 @@ int main()
         for (int j = 1; j <= N; j++)
         {
             cin >> dist[i][j];
-            floyd[i][j] = dist[i][j];
         }
     }
+
+    bool flag = false;
 
     memset(edge, true, sizeof(edge));
     for (int i = 1; i <= N; i++)
@@ -40,17 +41,9 @@ int main()
                     continue;
                 if (dist[i][j] == dist[i][k] + dist[k][j])
                     edge[i][j] = false;
-                floyd[i][j] = min(floyd[i][j], floyd[i][k] + floyd[k][j]);
+                else if (dist[i][j] > dist[i][k] + dist[k][j])
+                    flag = true;
             }
-        }
-    }
-
-    bool flag = false;
-    for (int i = 1; i <= N; i++)
-    {
-        for (int j = 1; j <= N; j++)
-        {
-            flag |= dist[i][j] != floyd[i][j];
         }
     }
 
