@@ -25,7 +25,7 @@
     <summary>플로이드 - 2</summary>
     <div markdown="1">
         <ul>
-            <li><a href=https://www.acmicpc.net/problem/2610/>회의준비</a></li>
+            <li><a href=https://www.acmicpc.net/problem/2610>회의준비</a></li>
             <li><a href=https://www.acmicpc.net/problem/1486>등산</a></li>
             <li><a href=https://www.acmicpc.net/problem/1507>궁금한 민호</a></li>
             <li><a href=https://www.acmicpc.net/problem/17182>우주 탐사선</a></li>
@@ -41,7 +41,7 @@
     <summary>플로이드 - 1</summary>
     <div markdown="1">
         <ul>
-            <li><a href=https://www.acmicpc.net/problem11404/>플로이드</a></li>
+            <li><a href=https://www.acmicpc.net/problem11404>플로이드</a></li>
             <li><a href=https://www.acmicpc.net/problem/1956>운동</a></li>
             <li><a href=https://www.acmicpc.net/problem/2458>키 순서</a></li>
             <li><a href=https://www.acmicpc.net/problem/10159>저울</a></li>
