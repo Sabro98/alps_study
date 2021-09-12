@@ -1,7 +1,5 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&height=200&text=ALPS%20Algorithm%20Study&color=50bcdf&fontColor=FFFFFF&fontSize=35&fontAlignY=35&descAlign=66&descAlignY=48)
 
-**웬만하면 다른 사람 폴더 터치X**
-
 미룬 문제: [스키장](https://www.acmicpc.net/problem/22358)
 
 <br>
@@ -30,7 +28,7 @@
             <li><a href=https://www.acmicpc.net/problem/1507>궁금한 민호</a></li>
             <li><a href=https://www.acmicpc.net/problem/17182>우주 탐사선</a></li>
             <li><a href=https://www.acmicpc.net/problem/1602>도망자 원숭이</a></li>
-            <li><a href=https://www.acmicpc.net/problem/13143>Ignition</a></li>
+            <li><a href=https://www.acmicpc.net/problem/13141>Ignition</a></li>
         </ul>
     </div>
 </details>
