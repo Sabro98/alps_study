@@ -1,7 +1,5 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&height=200&text=ALPS%20Algorithm%20Study&color=50bcdf&fontColor=FFFFFF&fontSize=35&fontAlignY=35&descAlign=66&descAlignY=48)
 
-**웬만하면 다른 사람 폴더 터치X**
-
 미룬 문제: [스키장](https://www.acmicpc.net/problem/22358)
 
 <br>
@@ -19,9 +17,26 @@
 
 ## Problems
 
-**210906**
+**210913**
 
 <details open>
+    <summary>비트마스킹</summary>
+    <div makrdown="1">
+        <ul>
+            <li><a href=https://www.acmicpc.net/problem/2098>외판원 순회</a></li>
+            <li><a href=https://www.acmicpc.net/problem/1194>달이 차오른다, 가자.</a></li>
+            <li><a href=https://www.acmicpc.net/problem/1562>계단 수</a></li>
+            <li><a href=https://www.acmicpc.net/problem/1102>발전소</a></li>
+            <li><a href=https://www.acmicpc.net/problem/4991>로봇 청소기</a></li>
+            <li><a href=https://www.acmicpc.net/problem/9328>열쇠</a></li>
+        </ul>
+    </div>
+
+</details>
+
+**210906**
+
+<details>
     <summary>플로이드 - 2</summary>
     <div markdown="1">
         <ul>
@@ -30,7 +45,7 @@
             <li><a href=https://www.acmicpc.net/problem/1507>궁금한 민호</a></li>
             <li><a href=https://www.acmicpc.net/problem/17182>우주 탐사선</a></li>
             <li><a href=https://www.acmicpc.net/problem/1602>도망자 원숭이</a></li>
-            <li><a href=https://www.acmicpc.net/problem/13143>Ignition</a></li>
+            <li><a href=https://www.acmicpc.net/problem/13141>Ignition</a></li>
         </ul>
     </div>
 </details>
