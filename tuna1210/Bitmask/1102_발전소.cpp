@@ -27,7 +27,7 @@ int repairGen(int activeStat, int activeCnt)
             // 다음 발전소를 키려면 이미 켜져있어야 하므로 꺼져있는 발전소는 Pass
             if((activeStat & (1 << j)) != (1 << j)) continue;
             minCost = min(minCost, repairCost[j][i]);
-        }
+        } 
          
         ret = min(ret, repairGen((activeStat | (1 << i)), activeCnt + 1) + minCost);
     }
@@ -69,4 +69,4 @@ int main()
     if(p <= startCnt) cout << 0 << "\n";
     else if(startCnt != 0) cout << repairGen(startStat, startCnt) << "\n";
     else cout << -1 << "\n";
-} 
+}
