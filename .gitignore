@@ -1,3 +1,4 @@
 *execution/
 *.vscode/
+*.DS_Store
 tempCodeRunnerFile*
