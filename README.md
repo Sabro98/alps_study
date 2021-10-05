@@ -17,9 +17,35 @@
 
 ## Problems
 
+**210927**
+
+<details open>   
+ <summary>배낭 문제 (with dp)</summary>
+    <div makrdown="1">
+        <ul>
+            <li><a href=https://www.acmicpc.net/problem/12865>평범한 배낭</a></li>
+            <li><a href=https://www.acmicpc.net/problem/23061>백남이의 여행 준비</a></li>
+            <li><a href=https://www.acmicpc.net/problem/7579>앱</a></li>
+            <li><a href=https://www.acmicpc.net/problem/2662>기업투자</a></li>
+            <li><a href=https://www.acmicpc.net/problem/1450>냅색문제</a></li>
+            <li><a href=https://www.acmicpc.net/problem/10982>행운쿠키 제작소</a></li>
+            <li><a href=https://www.acmicpc.net/problem/12920>평범한 배낭 2</a></li>
+        </ul>
+    </div>
+
+</details>
+
+**210927**
+
+<details>
+    <summary>모의 연습</summary>
+    <a href=https://www.acmicpc.net/category/detail/2793>problem set</a>
+
+</details>
+
 **210913**
 
-<details open>
+<details>
     <summary>비트마스킹</summary>
     <div makrdown="1">
         <ul>
