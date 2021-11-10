@@ -20,6 +20,24 @@
 **210927**
 
 <details open>   
+ <summary>세그먼트 트리</summary>
+    <div makrdown="1">
+        <ul>
+            <li><a href=https://www.acmicpc.net/problem/2042>구간 합 구하기</a></li>
+            <li><a href=https://www.acmicpc.net/problem/11505>구간 곱 구하기</a></li>
+            <li><a href=https://www.acmicpc.net/problem/2357>최솟값과 최댓값</a></li>
+            <li><a href=https://www.acmicpc.net/problem/12837>가계부 (Hard)</a></li>
+            <li><a href=https://www.acmicpc.net/problem/1280>나무 심기</a></li>
+            <li><a href=https://www.acmicpc.net/problem/9345>디지털 비디오 디스크(DVDs)</a></li>
+            <li><a href=https://www.acmicpc.net/problem/2243>사탕상자</a></li>
+        </ul>
+    </div>
+
+</details>
+
+**210927**
+
+<details>   
  <summary>배낭 문제 (with dp)</summary>
     <div makrdown="1">
         <ul>
